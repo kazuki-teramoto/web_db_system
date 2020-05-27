@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>検索用フォーム</title>
+</head>
+<body>
+    <h1>これはMUSIC_DBデータ検索用のフォームです。</h1>
+    <p>下からフィールド名を選択してください。</p>
+    <p>フィールド名を選択したら、【GetList】ボタンをクリックします。</p>
+    <form action="http://localhost:8080/web_kadai/m_getlist" method="post">
+    <select id="music_list" name="music_list" required>
+        <option value="">ここからカテゴリ名を選んでください。</option>
+        <option value="アーティスト名">アーティスト名</option>
+        <option value="曲調">曲調</option>
+        <option value="シリーズ名">シリーズ名</option>
+        <option value="曲名">曲名</option>
+        <option value="制作日">制作日</option>
+    </select>
+    <input type="submit" value="GetList">
+    </form>
+</body>
+</html>
