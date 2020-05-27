@@ -6,8 +6,24 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>検索結果</title>
+<link rel="stylesheet" href="css/anime1.css">
+<script>
+    window.onload = function() {
+      let spinner = document.getElementById('my-spinner');
+
+      // .box に .loaded を追加してローディング表示を消す
+      spinner.classList.add('loaded');
+    }
+</script>
 </head>
 <body>
+    <div class="box" id="my-spinner">
+        <div class="spinner type1">
+            <span>Loading....</span>
+        </div>
+    </div>
+
+
     <h2>検索結果</h2>
     <p>全${web_db_count}件見つかりました。</p>
     <table border="1">
